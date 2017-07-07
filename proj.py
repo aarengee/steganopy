@@ -45,7 +45,7 @@ def compress_image(pic):
     print 'compressing image......'
     img1 = Image.open(pic)
     #tmp = StringIO()
-    img1.save("C:\\Users\\Rijul\\Desktop\\image\\compressedimg.png",optimize=True,quality=5)
+    img1.save("C:\\Users\\username\\Desktop\\image\\compressedimg.png",optimize=True,quality=5)
     #output_data = tmp.getvalue()
 
     """headers = dict()
@@ -57,7 +57,7 @@ def compress_image(pic):
 
 
 def hide(message):
-        img = Image.open("C:\\Users\\Rijul\\Desktop\\image\\compressedimg.png")
+        img = Image.open("C:\\Users\\username\\Desktop\\image\\compressedimg.png")
 	binary = str2bin(message) + '1111111111111110'
 	if img.mode in ('RGBA'):
 		img = img.convert('RGBA')
